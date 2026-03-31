@@ -76,12 +76,3 @@ class RockPaperScissorsGame
 
 }
 
-/*
-
-    Rock > Scissors
-    Scissors > Paper
-    Paper > Rock
-
-    
-
-*/
