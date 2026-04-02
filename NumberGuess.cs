@@ -37,7 +37,7 @@ class NumberGuess
         return result;     
     }
 
-    static void Main()
+    static void Main2()
     {
 
         printHeader();

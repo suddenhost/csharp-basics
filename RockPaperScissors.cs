@@ -33,14 +33,14 @@ class RockPaperScissorsGame
 
     static void checkResult(int computerChoice, int playerChoice)
     {
-        int result = (computerChoice - playerChoice) % 3;
+        int result = (computerChoice - playerChoice + 3) % 3;
         if (result == 0)
         {
             Console.WriteLine("It's a draw!");
         } else if (result == 1)
         {
             Console.WriteLine("Computer wins!");
-        } else
+        } else if (result == 2)
         {
             Console.WriteLine("Player wins!");
         }
@@ -48,7 +48,7 @@ class RockPaperScissorsGame
 
     static void printComputerChoice(int computerChoice)
     {
-        Console.WriteLine("Computer choose: {0}", options[computerChoice]);
+        Console.WriteLine("Computer choice: {0}", options[computerChoice]);
     }
 
     static void Main()
